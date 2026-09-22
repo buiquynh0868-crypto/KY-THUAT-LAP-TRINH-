@@ -23,10 +23,16 @@ int main() {
 	 
 	 printf ("\n a) Tong 3 so = %2f \n", tong); 
 	 printf ("b) Tich 3 so = %2f \n", tich); 
-	 printf ( "c) Can bac 2 cua a =%f \n", can2_a); 
+	 // kiem tra dieu kien a>=0 cho cau c 
+	 if (a>=0) {
+	     can2_a = sqrt(a); 
+	     printf ( "c) Can bac 2 cua a =%f \n", can2_a); 
+	 } else { 
+	    printf ( "c) Khong tinh duoc can bac hai vi a < 0 \n"); 
+	 }
+	 
 	 printf ("d) Can bac 3 cua b =%f \n", can3_b); 
 	 printf ("e) a luy thua b =%f \n", luythua); 
-	  
 	
 	return 0;
 }
