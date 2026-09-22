@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main () {
+	float a ,b ,c;
+	float P , Q , S; 
+	//Nhap cac so thuc tu ban phim 
+	printf ("Nhap so thuc a: ");
+	scanf (" %f", &a);
+	printf ("Nhap so thuc b: ");
+	scanf ("%f", &b);
+	printf ("Nhap so thuc c: ");
+	scanf ("%f", &c);
+	
+	//Tinh toan theo yeu cau 
+	P= (a + b)/2;
+	Q= (a + b + c)/3; 
+	S= a + b; 
+	
+	printf ("\n KET QUA \n");
+	printf ("a) Trung binh cong cua (a+b) =%f \n" ,P);
+	printf ("b) Trung binh cong cua (a + b + c) =%f \n" ,Q); 
+	printf ("c) Tong cua (a + b)=%f \n" ,S);
+	 
+	
+	
+	
+	return 0;
+}
