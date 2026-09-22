@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	float a, b, c; //bien luu 3 so nhap tu ban phim  
+	float tong, tich; // bien luu ket qua a va b  
+	double can2_a, can3_b, luythua; // bien luu ket qua c,d,e   
+	//Nhap chuong trinh tu ban phim 
+	printf ("Nhap so thuc a: "); 
+	scanf ("%f", &a); 
+	printf ("Nhap so thuc b: ");
+	scanf ("%f", &b); 
+	printf ("Nhap so thuc c: ");
+	scanf ("%f", &c); 
+	 
+	  tong = a + b + c;
+	  tich = a * b * c; 
+	  can2_a = sqrt(a);
+	  can3_b = cbrt (b) ; 
+	  luythua = pow(a,b); 
+	 
+	 printf ("\n a) Tong 3 so = %2f \n", tong); 
+	 printf ("b) Tich 3 so = %2f \n", tich); 
+	 printf ( "c) Can bac 2 cua a =%f \n", can2_a); 
+	 printf ("d) Can bac 3 cua b =%f \n", can3_b); 
+	 printf ("e) a luy thua b =%f \n", luythua); 
+	  
+	
+	return 0;
+}
