@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	float a , b , c; 
+	float tong, P, can3_b; 
+	
+	printf (" Nhap so thuc a: "); 
+	scanf ("%f", &a); 
+	printf ("Nhap so thuc b: "); 
+	scanf ( "%f", &b); 
+	printf ("Nhap so thuc c:"); 
+	scanf ("%f", &c); 
+	
+	tong = a + b + c; 
+	P = a* (b-c )* (b-c); 
+	can3_b = cbrt(b); 
+	
+	printf ("\n a) Tong 3 so =%f \n", tong); 
+	printf ("b) Gia tri bieu thuc P =%f \n", P); 
+	printf ("c) Can bac 3 cua b =%f \n ", can3_b);  
+	
+	return 0;
+}
