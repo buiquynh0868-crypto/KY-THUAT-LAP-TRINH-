@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+    unsigned int n; 
+	int  hang_tram , hang_chuc , hang_don_vi; 
+	printf (" Nhap vao so nguyen *100-999): "); 
+	scanf ("%u", &n); 
+	// kiem tra dieu kien hop le 
+	if (n >= 100 && n <= 999 ) {
+	hang_tram = n / 100;
+	hang_chuc = ( n % 100 ) / 10; 
+	hang_don_vi = n % 10; 
+	
+	printf (" \n So hang tram =%u \n", hang_tram); 
+	printf (" So hang chuc =%u \n", hang_chuc); 
+	printf (" So hang don vi =%u \n", hang_don_vi);  
+} else {
+	printf (" \n So ban nhap khong hop le trong khoang 100-999! \n");  
+}
+
+	return 0;
+}
