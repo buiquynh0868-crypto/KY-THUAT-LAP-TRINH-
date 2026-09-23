@@ -1,62 +1,31 @@
-[Project]
-FileName=bai7-BAIL1.dev
-Name=bai7-BAIL1
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=0
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=1
+#include <stdio.h>
+#include <math.h>
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-[Unit1]
-FileName=bai7-BAIL1.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
+int main() {
+	float a , b , c; 
+	float tong , P , can2_a; 
+	
+	printf ("Nhap so thuc a: "); 
+	scanf ("%f", &a); 
+	printf ("Nhap so thuc b: "); 
+	scanf ("%f", &b); 
+	printf ("Nhap so thuc c: ");
+	scanf ("%f", &c); 
+	
+	tong = a + b + c; 
+	P = a* (b+c)*(b+c);
+	
+	printf ("\n a) Tong 3 so =%2f \n", tong); 
+	printf ("b) Gia tri bieu thuc P =%f \n"); 
+	if (a>=0) {
+		can2_a = sqrt (a); 
+		printf ("c) can bac 2 cua a =%f \n", can2_a ); 
+	} else {
+		printf ( "c) Khong tinh duoc can bac hai vi a < 0 \n"); 
+	}
+	 
+	
+	return 0;
+}
