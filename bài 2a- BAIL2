@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() { // khoi tao bien dem 
+	unsigned int n; 
+	unsigned long S = 0; // dam bao phep cong tich luy tu chuan tu bien 0 
+	unsigned int i = 1; // dam bao phan tu dau tien cua vong lap phai la 1 de tranh tinh trang 0^2 
+	
+	printf ("\n Nhap so nguyen duong n: "); 
+	scanf ("%u", &n); 
+	// Nhap 
+	do {
+		printf (" n phai lon hon 0! \n"); 
+		scanf ("%u", &n); 
+		if ( n <= 0) {
+			printf (" n phai lon hon 0. Vui long nhap lai. \n");
+		}
+	} while (n <= 0); 
+	do { 
+	S = S + i + i; 
+	i++; // i = i + 1  
+	}  while ( i <=n ); // lap den khi i ko vuot qua n thi dung 
+	
+	printf (" Tong S = 1^2 + 2^ 2 +... %u^2 = %lu \n", n, S); 
+	
+	return 0;
+}
