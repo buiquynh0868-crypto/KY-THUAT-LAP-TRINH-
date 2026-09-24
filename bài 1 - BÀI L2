@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	float a , b , c; 
+	float delta , x1 , x2;   
+	// Nhap cac he so 
+	printf ("Nhap he so a ( a !=0): ");
+	scanf ("%f", &a); 
+	printf ("Nhap he so b: "); 
+	scanf ("%f", &b); 
+	printf (" Nhap he so c:" ); 
+	scanf ("%f", &c); 
+	// kiem tra dieu kien cua a
+	if (a==0){ // kiem tra dieu kien dau tien 
+		printf ("\n He so phai khac 0 de tao thanh phuong trinh bac 2 !!! \n"); 
+	} // neu a da khac o roi thi dieu kien phu hop ta chuyen sang tinh delta 
+	else {
+		delta = b * b - 4 * a * c; 
+		// sau khi tinh duoc delta roi ta sex bien luan nghiem theo 3 truong hop 
+		if (delta < 0 ) { 
+		printf ("\n Phuong trinh nay vo nghiem \n");
+		}
+		else if ( delta ==0){ // dieu kien truoc if bi sai ( tuc a== 0 ) thi ta se nhay qua dieu kien nay 
+		x1 = -b / ( 2 * a ); 
+		printf (" Phuong trinh co nghiem kep: x1 = x2 = %2f \n", x1); 
+		}
+		else { // neu 2 dieu kien kia sai thi se re nhanh xuong else cuoi cung 
+		x1 = ( -b + sqrt (delta)) / ( 2 * a); 
+		x2 = ( -b - sqrt ( delta)) / ( 2 * a ); 
+		printf (" Phuong trinh co 2 nghiem phan biet: \n "); 
+		printf ("x1 = %2f", x1); 
+		printf ("x2 = %2f", x2); 
+		}
+		}
+	
+	return 0;
+}
