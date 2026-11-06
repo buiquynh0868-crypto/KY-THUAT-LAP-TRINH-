@@ -1,0 +1,19 @@
+#include <string.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int a = 12, b = 8; 
+	int *p; // khai bao bien con tro  
+	p= &a; *p = 67; // con tro se di den dia chi cua a, va thay doi gia tri cua a tu 12 thanh 67  
+	p=&b;  *p=36;  // tuong tu tren  
+	
+	printf ("Gia tri a la: %d \n", a,*p); // in ra gia tri cua a  
+		printf ("Dia chi a la: %p \n",&a); // in ra ket qua dia chi cua a  
+	printf ("Gia tri b la: %d \n", b,*p); 
+		printf ("Dia chi b la: %p \n",&b); 	
+	printf("p = %p, &a = %p, &b = %p\n", (void *)p, (void *)&a, (void *)&b); // khi in ra ket qua thi chung ta co the thay rang p la 1 bien chua dia chi  
+	return 0;
+} 
+
